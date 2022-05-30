@@ -248,6 +248,10 @@ body.dark-theme {
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
 
+div form .button {
+  text-align: center;
+}
+
 .button i {
   font-size: 1.25rem;
 }
@@ -494,7 +498,8 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 44%);
 }
 
-/*=============== BREAKPOINTS ===============*/
+/*=============== MEDIA QUERIES ===============*/
+
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -528,7 +533,7 @@ body.dark-theme {
   }
 
   .contact__form-area {
-    width: 360px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -542,6 +547,10 @@ body.dark-theme {
   .skills__content {
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .contact__container {
+    column-gap: 5rem;
   }
 
 }
