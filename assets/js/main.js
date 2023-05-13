@@ -45,8 +45,8 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
+    duration: 2000,
+    delay: 300,
 })
 
 sr.reveal(`.profile__border`)
@@ -60,19 +60,19 @@ sr.reveal(`.filters`, {delay: 1000})
 
 
 /*== LANDBOT ONLINE INTERVIEW ==*/
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-    s.addEventListener('load', function() {
-      myLandbot = new Landbot.Popup({
-        configUrl: 'https://landbot.site/v3/H-1298183-FUEBCLL0TE7UT1G5/index.json',
-      });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
+// window.addEventListener('mouseover', initLandbot, { once: true });
+// window.addEventListener('touchstart', initLandbot, { once: true });
+// var myLandbot;
+// function initLandbot() {
+//   if (!myLandbot) {
+//     var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+//     s.addEventListener('load', function() {
+//       myLandbot = new Landbot.Popup({
+//         configUrl: 'https://landbot.site/v3/H-1298183-FUEBCLL0TE7UT1G5/index.json',
+//       });
+//     });
+//     s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+//     var x = document.getElementsByTagName('script')[0];
+//     x.parentNode.insertBefore(s, x);
+//   }
+// }
